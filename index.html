@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw | Still running.</title>
+    <meta name="description" content="An autonomous memecoin on Solana. OpenClaw doesn't promise. It observes. It keeps running.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Subtle background gradient overlay -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon" id="nav-logo-placeholder">
+                    <img src="img/logo.png" alt="OpenClaw" class="nav-logo-img">
+                </div>
+                <span class="logo-text">OpenClaw</span>
+                <span class="nav-status-badge">live</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#status" class="nav-link">Status</a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#token" class="nav-link">Token</a>
+            </div>
+            <a href="https://dexscreener.com/solana/CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump" target="_blank" rel="noopener" class="nav-cta">
+                <span class="nav-cta-dot"></span>
+                Buy $CLAW
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-mascot" id="hero-mascot-placeholder">
+                <div class="mascot-container">
+                    <div class="mascot-glow"></div>
+                    <img src="img/logo.png" alt="OpenClaw" class="hero-logo-img">
+                    <div class="mascot-ring"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-headline"><span class="hero-title">Still running.</span></h1>
+                <p class="hero-subtext">An autonomous memecoin on Solana.</p>
+                <div class="hero-actions">
+                    <a href="https://x.com/i/communities/2017033555596226586" target="_blank" rel="noopener" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        Join X Community
+                    </a>
+                    <a href="https://dexscreener.com/solana/CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump" target="_blank" rel="noopener" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
+                        </svg>
+                        View Chart
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Agent Activity Ticker -->
+        <div class="agent-activity">
+            <div class="activity-line">
+                <span class="activity-dot"></span>
+                <span class="activity-text">agent_0x7f: monitoring</span>
+            </div>
+            <div class="activity-line">
+                <span class="activity-dot"></span>
+                <span class="activity-text">fees_router: active</span>
+            </div>
+            <div class="activity-line">
+                <span class="activity-dot"></span>
+                <span class="activity-text">contributor_fund: synced</span>
+            </div>
+        </div>
+        <div class="hero-indicator">
+            <span class="pulse"></span>
+            <span class="indicator-text">operational</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-label">what is openclaw</div>
+            <div class="about-content">
+                <p class="about-text parallax-text typewriter-line" data-speed="0.05">
+                    <span class="typewriter-text">OpenClaw is a memecoin inspired by autonomous agents.</span>
+                </p>
+                <p class="about-text parallax-text typewriter-line" data-speed="0.08" data-delay="1000">
+                    <span class="typewriter-text">It doesn't promise features, roadmaps, or narratives.</span>
+                </p>
+                <p class="about-text accent parallax-text typewriter-line" data-speed="0.1" data-delay="2000">
+                    <span class="typewriter-text">It exists. It runs. It keeps observing.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Visual Section -->
+    <section class="section terminal-section">
+        <div class="container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn red"></span>
+                        <span class="terminal-btn yellow"></span>
+                        <span class="terminal-btn green"></span>
+                    </div>
+                    <div class="terminal-title">openclaw-agent</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">openclaw --status</span>
+                    </div>
+                    <div class="terminal-line terminal-output">
+                        <span class="terminal-success">✓</span> Agent initialized
+                    </div>
+                    <div class="terminal-line terminal-output">
+                        <span class="terminal-success">✓</span> Monitoring blockchain activity
+                    </div>
+                    <div class="terminal-line terminal-output">
+                        <span class="terminal-success">✓</span> Community fees: routing to contributors
+                    </div>
+                    <div class="terminal-line terminal-output">
+                        <span class="terminal-info">●</span> Status: <span class="terminal-highlight">OPERATIONAL</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="section philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <div class="philosophy-line parallax-text reveal-text" data-speed="-0.03">OpenClaw does not react to noise.</div>
+                <div class="philosophy-line parallax-text reveal-text" data-speed="0">It does not explain itself.</div>
+                <div class="philosophy-line highlight parallax-text reveal-text" data-speed="0.03">It continues operating.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section - Tweets -->
+    <section class="section featured" id="featured">
+        <div class="container">
+            <div class="section-label">giving back</div>
+            <div class="featured-header">
+                <h2 class="featured-title"><span class="featured-text">Supporting Open Source</span></h2>
+                <p class="featured-subtitle">Coin fees donated to OpenClaw GitHub contributors.</p>
+            </div>
+            <div class="tweets-grid">
+                <!-- Tweet 1 -->
+                <a href="https://x.com/rastacowboy2021/status/2017140902418862278" target="_blank" rel="noopener" class="tweet-card">
+                    <div class="tweet-header">
+                        <div class="tweet-avatar">
+                            <img src="img/rasta.jpg" alt="rastacowboy2021" class="avatar-img">
+                        </div>
+                        <div class="tweet-user">
+                            <span class="tweet-name">rastacowboy2021</span>
+                            <span class="tweet-handle">@rastacowboy2021</span>
+                        </div>
+                        <svg class="tweet-x-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </div>
+                    <div class="tweet-content">
+                        <p>Hey <span class="tweet-mention">@steipete</span> we absolutely love how you've changed the AI space with <span class="tweet-mention">@openclaw</span>.</p>
+                        <p>I saw on your site you were looking for contributors or sponsors to help with the massive influx of building you have going on and decided as a community to donate the fees generated from this coin to your continued building of OPENCLAW.</p>
+                        <p class="tweet-highlight">We started with a $2500 donation and will continue to do so.</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <span class="tweet-date">View on X</span>
+                        <svg class="tweet-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                </a>
+                <!-- Tweet 2 - OpenClaw Dev Response -->
+                <a href="https://x.com/steipete/status/2017141288248725791" target="_blank" rel="noopener" class="tweet-card tweet-card-response">
+                    <div class="tweet-reply-indicator">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M1.751 10.004c0-.478.379-.866.847-.866h14.89l-5.36-5.363a.866.866 0 011.225-1.225l6.858 6.858a.865.865 0 010 1.225l-6.858 6.858a.866.866 0 01-1.225-1.225l5.36-5.363H2.598a.866.866 0 01-.847-.866z"/>
+                        </svg>
+                        <span>OpenClaw Dev Response</span>
+                    </div>
+                    <div class="tweet-header">
+                        <div class="tweet-avatar tweet-avatar-verified">
+                            <img src="img/petter.png" alt="steipete" class="avatar-img">                        </div>
+                        <div class="tweet-user">
+                            <span class="tweet-name">steipete <span class="verified-badge">✓</span></span>
+                            <span class="tweet-handle">@steipete · OpenClaw Creator</span>
+                        </div>
+                        <svg class="tweet-x-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </div>
+                    <div class="tweet-content">
+                        <p>oh wow, thank you! I'll pass it along!</p>
+                        <p class="tweet-secondary">(well I already do to all upstream dependencies, but once that's covered to the clawtributors!)</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <span class="tweet-date">View on X</span>
+                        <svg class="tweet-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="featured-note">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="github-icon">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>Fees → GitHub Contributors</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Status Section -->
+    <section class="section status" id="status">
+        <div class="container">
+            <div class="section-label">system status</div>
+            <div class="status-grid">
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <span class="status-dot online"></span>
+                        <span class="status-label">Status</span>
+                    </div>
+                    <div class="status-value">Online</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <span class="status-dot normal"></span>
+                        <span class="status-label">Activity</span>
+                    </div>
+                    <div class="status-value">Normal</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <span class="status-dot observing"></span>
+                        <span class="status-label">Mode</span>
+                    </div>
+                    <div class="status-value">Observing</div>
+                </div>
+            </div>
+            <div class="status-footer">
+                System operating as intended.
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="section community" id="community">
+        <div class="container">
+            <div class="section-label">community</div>
+            <div class="community-content">
+                <p class="community-text">The community posts.</p>
+                <p class="community-text accent">OpenClaw watches.</p>
+            </div>
+            <div class="community-links">
+                <a href="https://t.me/OPENCLAWMEME" target="_blank" rel="noopener" class="community-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+                    </svg>
+                    <span>Telegram & Memes</span>
+                </a>
+                <a href="https://x.com/i/communities/2017033555596226586" target="_blank" rel="noopener" class="community-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>X Community</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Token Section -->
+    <section class="section token" id="token">
+        <div class="container">
+            <div class="section-label">token info</div>
+            <div class="token-grid">
+                <div class="token-item">
+                    <span class="token-key">Name</span>
+                    <span class="token-value">OpenClaw</span>
+                </div>
+                <div class="token-item">
+                    <span class="token-key">Chain</span>
+                    <span class="token-value">Solana</span>
+                </div>
+                <div class="token-item contract">
+                    <span class="token-key">Contract</span>
+                    <div class="contract-wrapper">
+                        <a href="https://dexscreener.com/solana/CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump" target="_blank" rel="noopener" class="contract-link" title="View on DexScreener">
+                            <span class="token-value contract-address" id="contract-address">CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="external-icon">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                        <button class="copy-btn" id="copy-btn" title="Copy address">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="token-disclaimer">
+                No presale. No promises.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon small">
+                        <img src="img/logo.png" alt="OpenClaw" class="footer-logo-img">
+                    </div>
+                    <span>OpenClaw</span>
+                </div>
+                <div class="footer-status">Still running.</div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-copyright">© OpenClaw</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
